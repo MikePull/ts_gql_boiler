@@ -51,8 +51,8 @@
     https://mikro-orm.io/docs/migrations/
 
     [ npx mikro-orm migration:create ] to run a migration based on your "entities" by each column: { "name" <property> <type> <nullable> }
-    Instead of using the CLI to run a migration you can use the API given by MikroORM to run it in the code before persist and flush
-    : 
+    Instead of using the CLI to run a migration you can use the API given by MikroORM to run it in the code before persist and flush:
+    
     instance.getMigrator().up()
 
  */
@@ -68,7 +68,7 @@ const main = async () => {
     // Connecting to database via config
 
     // Creating tables from running migrations which automatically generates SQL
-    await orm.getMigrator().up();
+     await orm.getMigrator().up();
 
     //  console.log(initConfig.migrations)
     // https://mikro-orm.io/docs/entity-schema/
